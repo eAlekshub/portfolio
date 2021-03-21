@@ -1,0 +1,1045 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+header {
+  margin-bottom: 110px;
+}
+.row {
+  overflow: hidden;
+  background-color: #e7e7e7;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+}
+
+.logo {
+  float: left;
+  position: relative;
+  width: 18%;
+  height: 80px;
+  background: #ffffff url("img/logo.png") center / 80% no-repeat;
+}
+.logo-triangle {
+  position: absolute;
+  left: 100%;
+  top: -9px;
+  border-top: 89px solid transparent;
+  border-left: 35px solid #ffffff;
+}
+.contacts {
+  display: flex;
+  position: relative;
+  padding: 6px 0 6px 15px;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.075rem;
+  font-weight: 500;
+  margin-left: 21%;
+  background-color: #ffffff;
+}
+.scrolled {
+  display: none;
+}
+
+.contacts-triangle {
+  position: absolute;
+  right: 100%;
+  top: -5px;
+  border-left: 18px solid transparent;
+  border-top: 45px solid #ffffff;
+}
+.contacts a {
+  text-decoration: none;
+  color: #151515;
+}
+.header-phone {
+  position: relative;
+  margin: 0 2% 0 auto;
+  padding: 0 0 0 3%;
+  background: url("img/header-phone-icon.png") left 20%/12% no-repeat;
+}
+.header-adress {
+  margin-right: 3%;
+  padding: 0 0 0 3%;
+  background: url("img/header-map-marker.png") left top/7% no-repeat;
+}
+
+.header-facebook {
+  width: 29px;
+  height: 29px;
+  margin-right: 1%;
+  background: #e7e7e7 url("img/header-facebook-black.svg") center/70% no-repeat;
+  transition: 0.5s;
+}
+.header-facebook:hover {
+  background: #6046b6 url("img/header-facebook-white.svg") center/70% no-repeat;
+}
+.header-twitter {
+  width: 29px;
+  height: 29px;
+  margin-right: 1%;
+  background: #e7e7e7 url("img/header-twitter-black.svg") center/70% no-repeat;
+  transition: 0.5s;
+}
+.header-twitter:hover {
+  background: #6046b6 url("img/header-twitter-white.svg") center/70% no-repeat;
+}
+.header-instagram {
+  width: 29px;
+  height: 29px;
+  margin-right: 5%;
+  background: #e7e7e7 url("img/header-instagram-black.svg") center/70% no-repeat;
+  transition: 0.5s;
+}
+.header-instagram:hover {
+  background: #6046b6 url("img/header-instagram-white.svg") center/70% no-repeat;
+}
+
+.header-navbar {
+  padding: 10px 0px 15px 0px;
+  text-decoration: none;
+  text-align: right;
+  margin-left: 21%;
+}
+
+.header-navbar a {
+  position: relative;
+  text-decoration: none;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  letter-spacing: 0.075rem;
+  color: #151515;
+  margin: 0 2%;
+  font-weight: 600;
+}
+.header-navbar a::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: -10px;
+  width: 0;
+  height: 100%;
+  height: 3px;
+  transition: 0.5s;
+  background-color: #6046b6;
+}
+.header-navbar a:hover::after {
+  width: 100%;
+}
+.header-navbar a.icon {
+  font-size: 30px;
+}
+.introduction {
+  background: #ffffff98 url("img/bg1.jpg") center no-repeat;
+  animation: image 10s 0.5s ease infinite normal both;
+}
+@keyframes image {
+  0% {
+    background-image: url("img/bg1.jpg");
+  }
+  25% {
+    background-image: url("img/bg2.jpg");
+  }
+  50% {
+    background-image: url("img/bg2.jpg");
+  }
+  75% {
+    background-image: url("img/bg1.jpg");
+  }
+  100% {
+    background-image: url("img/bg1.jpg");
+  }
+}
+.introduction-block {
+  font-family: "Crimson Text", serif;
+  color: #ffffff;
+  width: 80%;
+  padding-top: 50px;
+  overflow: hidden;
+}
+.introduction-block h1 {
+  position: relative;
+  font-size: 7rem;
+  font-weight: 300;
+  line-height: 0.9;
+  letter-spacing: 2px;
+  width: 70%;
+  margin: 0 auto 20px 15%;
+  text-align: left;
+  animation: introduction 10s ease 0.5s 1 normal both;
+}
+.introduction-block p {
+  position: relative;
+  width: 40%;
+  margin: 0 auto 20px 15%;
+  font-size: 1.5rem;
+  text-align: left;
+  animation: introduction-text 10s ease 1s 1 normal both;
+}
+
+.introduction-botton {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  width: 30%;
+  height: 70px;
+  margin: 0 auto 60px 15%;
+  background: #ffe745;
+  color: #151515;
+  font-weight: 700;
+  padding-top: 23px;
+  transition: 0.5s;
+  animation: introduction 10s ease 0.5s 1 normal both;
+}
+@keyframes introduction {
+  0% {
+    top: 999px;
+  }
+  20% {
+    top: 0px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@keyframes introduction-text {
+  0% {
+    right: 999px;
+  }
+  20% {
+    right: 0px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+.introduction-botton:hover {
+  color: #ffffff;
+  background-color: #73cca1;
+}
+
+.menu {
+  margin-top: 70px;
+}
+.box-title {
+  font-size: 40px;
+  font-family: "Crimson Text", serif;
+}
+.menu-blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.salads {
+  width: 370px;
+  height: 270px;
+  background: url("img/menu-img/salads-img.jpg") center/110% no-repeat;
+  margin: 25px auto 25px auto;
+  transition: 0.7s;
+  text-decoration: none;
+}
+.pizzas {
+  width: 370px;
+  height: 270px;
+  background: url("img/menu-img/pizzas-img.jpg") center/110% no-repeat;
+  margin: 25px auto 25px auto;
+  transition: 0.7s;
+  text-decoration: none;
+}
+.burgers {
+  width: 370px;
+  height: 270px;
+  background: url("img/menu-img/burgers-img.jpg") center/110% no-repeat;
+  margin: 25px auto 25px auto;
+  transition: 0.7s;
+  text-decoration: none;
+}
+.desserts {
+  width: 370px;
+  height: 270px;
+  background: url("img/menu-img/desserts-img.jpg") center/110% no-repeat;
+  margin: 25px auto 25px auto;
+  transition: 0.7s;
+  text-decoration: none;
+}
+.drinks {
+  width: 370px;
+  height: 270px;
+  background: url("img/menu-img/drinks-img.jpg") center/110% no-repeat;
+  margin: 25px auto 25px auto;
+  transition: 0.7s;
+  text-decoration: none;
+}
+.seafood {
+  width: 370px;
+  height: 270px;
+  background: url("img/menu-img/seafood-img.jpg") center/110% no-repeat;
+  margin: 25px auto 25px auto;
+  transition: 0.7s;
+  text-decoration: none;
+}
+.salads:hover,
+.pizzas:hover,
+.burgers:hover,
+.desserts:hover,
+.drinks:hover,
+.seafood:hover {
+  background-size: 100%;
+}
+
+.salads-background,
+.pizzas-background,
+.burgers-background,
+.deserts-background,
+.drinks-background,
+.seafood-background {
+  box-sizing: border-box;
+  width: 370px;
+  height: 270px;
+  background-color: rgb(0, 0, 0, 0.5);
+  padding-top: 50px;
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+.salads-icon,
+.pizzas-icon,
+.burgers-icon,
+.deserts-icon,
+.drinks-icon,
+.seafood-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0px auto 20px auto;
+  background-clip: padding-box;
+  background-color: rgb(96, 70, 182, 0.5);
+  border: 5px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+}
+
+.icon {
+  margin-top: 15px;
+  filter: invert(1);
+}
+.service {
+  margin-top: 40px;
+  background: #151515 url("img/bg-service.jpg") center/cover no-repeat;
+}
+.discount {
+  margin-top: 40px;
+  background: #151515 url("img/bg-discount.jpg") center/cover no-repeat;
+}
+
+.service-block,
+.discount-block {
+  margin-left: auto;
+  font-family: "Crimson Text", serif;
+  color: #ffffff;
+  width: 33%;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+.service-block h2,
+.discount-block h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 0.9;
+  letter-spacing: 2px;
+  width: 90%;
+  margin: 0 0 20px;
+  text-align: left;
+}
+.service-block p,
+.discount-block p {
+  width: 90%;
+  margin: 0 auto 20px 0;
+  font-size: 1.4rem;
+  letter-spacing: 1.8px;
+  text-align: left;
+}
+
+.service-button,
+.discount-button {
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  width: 45%;
+  height: 70px;
+  margin: 0 auto 60px 0;
+  background: #ffe745;
+  color: #151515;
+  font-weight: 700;
+  padding-top: 25px;
+  transition: 0.5s;
+}
+.service-button:hover,
+.discount-button:hover {
+  color: #ffffff;
+  background-color: #73cca1;
+}
+.selected-dish,
+.reviews {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.box-title {
+  margin-bottom: 30px;
+}
+.dish-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.margherita-pizza {
+  margin-left: auto;
+  margin-bottom: 50px;
+  width: 260px;
+  height: 350px;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+  background: #ffffff url("img/pizza-img/margherita-pizza.png") 50% 30%
+    no-repeat;
+  cursor: pointer;
+}
+.mushroom-pizza {
+  cursor: pointer;
+  margin-left: 30px;
+  margin-bottom: 50px;
+  width: 260px;
+  height: 350px;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+  background: #ffffff url("img/pizza-img/mushroom-pizza.png") 50% 30% no-repeat;
+}
+.mushroom-pizza-decoration {
+  width: 60px;
+  height: 30px;
+  background-color: #6046b6;
+}
+.mushroom-pizza-status {
+  padding-top: 5px;
+  color: #ffffff;
+}
+.hawaiian-pizza {
+  cursor: pointer;
+  margin-left: 30px;
+  margin-bottom: 50px;
+  width: 260px;
+  height: 350px;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+  background: #ffffff url("img/pizza-img/hawaiian-pizza.png") 50% 30% no-repeat;
+}
+.pesto-pizza {
+  cursor: pointer;
+  margin-left: 30px;
+  margin-bottom: 50px;
+  margin-right: auto;
+  width: 260px;
+  height: 350px;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+  background: #ffffff url("img/pizza-img/pesto-pizza.png") 50% 30% no-repeat;
+  transition: 1s;
+}
+.pesto-pizza-decoration {
+  width: 60px;
+  height: 30px;
+  background-color: rgb(255, 217, 4);
+}
+.pesto-pizza-status {
+  padding-top: 5px;
+  color: #000000;
+}
+
+.stars {
+  margin-top: 100px;
+  width: 100%;
+  height: 25px;
+  box-sizing: border-box;
+}
+.pizza-name {
+  color: #000000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+.price {
+  color: rgb(96, 70, 182);
+}
+.old-price {
+  text-decoration: line-through;
+  padding-right: 10px;
+}
+.pizza-background {
+  width: 260px;
+  height: 350px;
+  transition: 1s;
+}
+.add-to-cart-new {
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+  box-sizing: border-box;
+  padding-top: 10px;
+  margin: 70px auto 0 auto;
+  width: 140px;
+  height: 40px;
+  background-color: rgb(255, 217, 4);
+  opacity: 0;
+  transition: 0.5s;
+}
+.add-to-cart {
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+  box-sizing: border-box;
+  padding-top: 10px;
+  margin: 100px auto 0 auto;
+  width: 140px;
+  height: 40px;
+  background-color: rgb(255, 217, 4);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.add-to-cart:hover,
+.add-to-cart-new:hover {
+  background-color: #73cca1;
+  color: #ffffff;
+}
+
+.pizza-background:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+.pizza-background:hover .add-to-cart-new,
+.pizza-background:hover .add-to-cart {
+  opacity: 1;
+}
+
+.customer-reviews {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.client {
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 30%);
+  margin: 1%;
+  width: 33%;
+  padding: 20px;
+  animation: appearance 1s ease;
+}
+@keyframes appearance {
+  0% {
+    opacity: 0.4;
+    transform: scale(0.7);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.client img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.comment {
+  height: 80px;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+.customer-name {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.client-title {
+  color: #6046b6;
+}
+.previous,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  padding: 20px;
+  background-color: #ffe745;
+  color: rgb(3, 3, 3);
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+}
+.next {
+  right: 25%;
+}
+.previous {
+  left: 25%;
+}
+.previous:hover,
+.next:hover {
+  background-color: rgb(115, 204, 161);
+  color: #ffffff;
+}
+
+.service-quality {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+.quality-title1 {
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.quality-title2 {
+  color: #73cca1;
+  font-weight: 600;
+  font-size: 15px;
+}
+.best-ingredients-bg,
+.comfortable-interior-bg,
+.quality-dishware-bg,
+.exotic-salads-bg,
+.refreshing-cocktails-bg,
+.types-of-pizza-bg,
+.diverse-menu-bg {
+  position: relative;
+  transition: top 0.2s ease-in-out;
+  top: 0px;
+}
+.best-ingredients-bg:hover,
+.quality-dishware-bg:hover,
+.exotic-salads-bg:hover {
+  top: -60px;
+}
+.comfortable-interior-bg:hover {
+  top: -95px;
+}
+.refreshing-cocktails-bg:hover {
+  top: -80px;
+}
+.types-of-pizza-bg:hover,
+.diverse-menu-bg:hover {
+  top: -80px;
+}
+.best-ingredients {
+  background-color: #ececec;
+  overflow: hidden;
+  width: 197px;
+  height: 365px;
+  margin-right: 5px;
+  margin-top: 7px;
+}
+.group-qualities1 {
+  width: 199px;
+  height: 365px;
+  margin-right: 7px;
+  margin-top: 7px;
+}
+.quality-dishware {
+  background-color: #ececec;
+  overflow: hidden;
+  height: 179px;
+  margin-bottom: 7px;
+}
+.exotic-salads {
+  background-color: #ececec;
+  overflow: hidden;
+  height: 179px;
+}
+
+.comfortable-interior {
+  overflow: hidden;
+  background-color: #ececec;
+  width: 425px;
+  height: 365px;
+  margin-right: 5px;
+  margin-top: 7px;
+}
+
+.group-qualities2 {
+  margin-top: 7px;
+  width: 425px;
+  height: 365px;
+}
+.refreshing-cocktails {
+  overflow: hidden;
+  background-color: #ececec;
+  height: 178px;
+}
+
+.block-qualities {
+  display: flex;
+  height: 180px;
+}
+.types-of-pizza {
+  height: 180px;
+  overflow: hidden;
+
+  margin-top: 7px;
+  margin-right: 7px;
+  background-color: #ececec;
+}
+.diverse-menu {
+  height: 180px;
+  overflow: hidden;
+  margin-top: 7px;
+  background-color: #ececec;
+}
+
+.book-your-table {
+  margin-bottom: 70px;
+}
+
+.feedback {
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 30%);
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px;
+  overflow: hidden;
+}
+.input {
+  margin: 20px 10px;
+  border: 2px solid #eee;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #777777;
+}
+
+textarea {
+  margin: 10px auto;
+  border: 2px solid #eee;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #777777;
+}
+.button-form {
+  border: none;
+  cursor: pointer;
+  width: 25%;
+  height: 70px;
+  background: #ffe745;
+  color: #151515;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: 0.5s;
+  float: left;
+  margin-left: 15%;
+  margin-right: 5%;
+}
+
+.button-form:hover {
+  color: #ffffff;
+  background-color: #73cca1;
+}
+.after-button-title {
+  display: flex;
+  width: 40%;
+}
+.after-button-title p {
+  margin-left: 2%;
+  font-size: 24px;
+  line-height: 1.21;
+  letter-spacing: 0.05em;
+  text-align: left;
+  font-weight: 300;
+  color: #777777;
+  font-style: italic;
+}
+
+.bottom-arrow {
+  margin: 0px 30px 0px auto;
+  height: 50px;
+  width: 80px;
+}
+.arrow-up {
+  position: fixed;
+  right: 30px;
+  bottom: 45%;
+  display: none;
+}
+
+.arrow-up-show {
+  display: block;
+}
+
+footer {
+  background-color: #343a40;
+}
+footer li {
+  list-style-type: none;
+  text-decoration: none;
+}
+.footer-list,
+.newsletter-title {
+  text-decoration: none;
+  color: #868e96;
+  letter-spacing: 0.05em;
+  line-height: 2;
+  transition: 0.5s;
+}
+.footer-list:hover {
+  color: #ffe745;
+}
+.services-information {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-style: normal;
+}
+.offers-footer,
+.information-footer,
+.newsletter-footer {
+  margin: 15px auto;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-title {
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  font-size: 20px;
+  line-height: 1.45;
+  color: #e7e7e7;
+  margin-bottom: 15px;
+}
+.footer-block {
+  display: flex;
+}
+.footer-part {
+  margin-right: 30px;
+}
+
+hr {
+  border: none;
+  background-color: #868e96;
+  height: 1px;
+}
+
+.footer-input {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-top: 10px;
+  padding: 15px 20px;
+  font-size: 16px;
+  border: none;
+}
+.footer-adress {
+  display: flex;
+}
+.button-footer {
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  background: #ffe745;
+  color: #151515;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.button-footer:hover {
+  color: #ffffff;
+  background-color: #73cca1;
+}
+address,
+.year {
+  font-style: normal;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: 0.075em;
+  color: #868e96;
+}
+
+@media screen and (max-width: 880px) {
+  .logo {
+    width: 15%;
+    height: 70px;
+  }
+
+  .logo-triangle {
+    display: none;
+  }
+  .contacts {
+    height: 50px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    letter-spacing: 0.055rem;
+    font-weight: 500;
+    margin-left: 0%;
+  }
+
+  .contacts-triangle {
+    display: none;
+  }
+  .contacts a {
+    padding-top: 6px;
+  }
+
+  .header-navbar {
+    padding: 25px 0px 0px 0px;
+    text-align: center;
+    margin-left: 0%;
+    height: 45px;
+  }
+
+  .header-navbar a {
+    font-size: 1.1rem;
+    line-height: 1;
+  }
+  .header-navbar a.icon {
+    display: none;
+  }
+
+  .introduction-block h1 {
+    font-size: 4rem;
+  }
+  .introduction-block p {
+    width: 55%;
+    font-size: 1.1rem;
+  }
+
+  .introduction-botton {
+    width: 35%;
+    height: 50px;
+    padding-top: 17px;
+    font-size: 0.8rem;
+  }
+  .menu {
+    margin-top: 50px;
+  }
+  .box-title {
+    font-size: 30px;
+  }
+  .salads,
+  .pizzas,
+  .burgers,
+  .desserts,
+  .drinks,
+  .seafood {
+    width: 320px;
+    height: 220px;
+    margin: 0px auto 25px auto;
+  }
+
+  .salads-background,
+  .pizzas-background,
+  .burgers-background,
+  .deserts-background,
+  .drinks-background,
+  .seafood-background {
+    width: 320px;
+    height: 220px;
+    font-size: 1.5rem;
+  }
+
+  .service-block,
+  .discount-block {
+    width: 55%;
+    font-size: 14px;
+  }
+  .service-block h2,
+  .discount-block h2 {
+    font-size: 2rem;
+    width: 90%;
+  }
+  .service-block p,
+  .discount-block p {
+    width: 90%;
+    font-size: 1.1rem;
+  }
+
+  .service-button,
+  .discount-button {
+    width: 45%;
+    height: 50px;
+    margin: 0 auto 50px 0;
+    padding-top: 12px;
+  }
+
+  .margherita-pizza,
+  .mushroom-pizza,
+  .hawaiian-pizza,
+  .pesto-pizza {
+    margin: 0 auto 40px auto;
+  }
+
+  .client {
+    width: 55%;
+  }
+  .client img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .comment {
+    line-height: 1.3;
+  }
+  .customer-name {
+    margin-bottom: 5px;
+  }
+
+  .next {
+    right: 5%;
+  }
+  .previous {
+    left: 5%;
+  }
+  .service-quality {
+    margin-bottom: 50px;
+  }
+  .book-your-table {
+    margin-bottom: 0px;
+    overflow: hidden;
+  }
+
+  .input {
+    margin: 10px 10px;
+    font-size: 14px;
+  }
+
+  textarea {
+    margin: 10px auto;
+    font-size: 16px;
+    width: 80%;
+  }
+  .button-form {
+    width: 35%;
+    height: 50px;
+    font-size: 0.9rem;
+  }
+
+  .after-button-title {
+    display: flex;
+    width: 45%;
+  }
+  .after-button-title p {
+    margin-left: 3%;
+    font-size: 1rem;
+  }
+
+  .arrow-up {
+    right: 20px;
+  }
+}
