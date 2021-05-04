@@ -14,15 +14,17 @@
  </head>
 
  <body>
+     <div class="wrapper">
      <header>
-
-         <nav class="header-navbar">
-            <a class="nav-link" href="#about-me"> About me</a>
-            <a class="nav-link" href="#portfolio"> Portfolio</a>
-            <a class="nav-link" href="#skills">Skills</a>
-            <a class="nav-link" href="#contacts">Contacts</a>
-            <a class="nav-link" href="" id="menu">&#9776</a>
-        </nav>
+            <div class="menu-icon">
+                <span></span>
+            </div>
+            <div class="header-navbar">
+                <a class="nav-link-left" href="#about-me"> About me</a>
+                <a class="nav-link-left" href="#portfolio"> Portfolio</a>
+                <a class="nav-link-right" href="#skills">Skills</a>
+                <a class="nav-link-right" href="#contacts">Contacts</a>
+            </div>
         
         <div class="header-subtitle">
             <div class="first-subtitle">
@@ -34,7 +36,7 @@
             <div class="dot">.</div>
             <h2 class="something-great">
                 <span class="something">SOMETHING</span> 
-                <span class="brackets">&#x007B</span> GREAT <span class="brackets">&#x007D</span></h2>
+                <span class="brackets">&#x007B</span>GREAT<span class="brackets">&#x007D</span></h2>
         </div>
         </div>
 
@@ -45,7 +47,7 @@
         </div>
 
         <div class="header__arrow">
-            <img class="arrow-down" src="img/header-arrow.svg" width="40" alt="&#709;">
+            <img class="arrow-down" src="img/header-arrow.svg" width="35"  alt="&#709;">
         </div>
         
         <div class="header-description">
@@ -58,6 +60,7 @@
             <div class="my-photo">
                 <div class="photo-border"></div>
                 <img src="img/photo.jpg" alt="photo" width="350">
+              
             </div>
                   
         <div class="introduction">
@@ -82,8 +85,8 @@
 
      <section class="portfolio" id="portfolio">
          <h2>My portfolio</h2>
-         <a href="project/project-adverting/index.html" target="blank"><img src="project/project-adverting/project-adverting.jpg" width="100%" alt="project-one"></a>
-         <a href="project/project-pizza-house/index.html" target="blank"><img src="project/project-pizza-house/project-pizza-house.jpg" alt="project-two" width="100%"></a>
+         <a class="project-adverting" href="project/project-adverting/index.html" target="blank"></a>
+         <a class="project-pizza" href="project/project-pizza-house/index.html" target="blank"></a>
      </section>
 
     <section class="skills" id="skills">
@@ -96,7 +99,7 @@
                         <img src="img/icon-html-5.png" alt="icon-html-5">
                     </div>
                     <div class="element-body">
-                        Knowledge of structure HTML document,<br> abilitty to use semantic tags.
+                        <p>Knowledge of structure HTML document, abilitty to use  semantic tags.</p>
                     </div>
                 </div>
             </div>
@@ -107,7 +110,7 @@
                             <img src="img/icon-css3.png" alt="icon-css3">
                     </div>
                     <div class="element-body">
-                        Smooth movement in css, estethic feel,<br> creativity in creating.
+                       <p>Smooth movement in css, estethic feel, creativity in creating.</p> 
                     </div>
                 </div>  
             </div>
@@ -120,24 +123,35 @@
                         <img src="img/icon-js.png" alt="icon-js">
                     </div>
                     <div class="element-body">
-                        Basic knowledge of JavaScript.<pre>                      </pre>
-                        
+                        <p>Basic knowledge of JavaScript.</p> 
                     </div>
                 </div> 
             </div>
-<!--
+
             <div class="skills-box">
                 <div class="box-element">
                     <div class="element-head">
-                        <img src="img/icon-php.svg" alt="icon-php">
+                        <img src="img/icon-github.png" alt="icon-github">
                     </div>
                     <div class="element-body">
-                        In the process of studying.<pre>                      </pre>
+                       <p>Knowledge of GitHub</p> 
                     </div>
                 </div>
             </div>
--->
         </div>
+
+        <div class="slider">
+            <div class="slider-line">
+                <img src="img/slider/avocode.png" alt="" >
+                <img src="img/slider/figma.jfif" alt="">
+                <img src="img/slider/photoshop.jpg" alt="">
+                <img src="img/slider/zeplin.png" alt="">
+                <img src="img/slider/photopea.jpg" alt="">
+            </div>
+             <p>Knowledge of graphics editors</p>
+        </div>
+        <button class="button-slider-prev">&#10094;</button>
+        <button class="button-slider-next">&#10095;</button>
     </section>
 
     <div class="bottom-arrow">
@@ -169,5 +183,6 @@
         <address>Mykolaiv, Ukraine</address>
      </footer>
 <script src="script.js"></script>
+</div>
  </body>
 </html>
